@@ -1,0 +1,61 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Sensables.IO IAQ Setup",
+        "description": "Configure your Sensables.IO IAQ webhook integration.\n\nYour webhook URL will be: {webhook_url}",
+        "data": {
+          "webhook_id": "Webhook ID",
+          "sensor_prefix": "Sensor Prefix",
+          "location": "Location (Optional)",
+          "temperature_unit": "Temperature Unit",
+          "expire_after": "Expire After (seconds)"
+        },
+        "data_description": {
+          "webhook_id": "Unique identifier for your webhook endpoint (alphanumeric and underscores only)",
+          "sensor_prefix": "Prefix for all sensor entities (e.g., 'sensables' creates sensor.sensables_device_temperature)",
+          "location": "Optional location name to include in sensor names (e.g., 'Kitchen' creates Kitchen Temperature)",
+          "temperature_unit": "Choose whether to display temperature in Celsius or Fahrenheit (data will be converted automatically)",
+          "expire_after": "Time in seconds after which inactive sensors are automatically removed (60-604800)"
+        }
+      }
+    },
+    "error": {
+      "invalid_webhook_id": "Webhook ID must contain only letters, numbers, and underscores",
+      "invalid_sensor_prefix": "Sensor prefix must contain only letters, numbers, and underscores",
+      "invalid_expire_after": "Expire time must be between 60 seconds and 7 days (604800 seconds)",
+      "unknown": "Unexpected error occurred"
+    },
+    "abort": {
+      "already_configured": "Integration with this webhook ID is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Sensables.IO IAQ Options",
+        "description": "Update your Sensables.IO IAQ configuration.\n\nCurrent webhook URL: {current_webhook_url}",
+        "data": {
+          "webhook_id": "Webhook ID",
+          "sensor_prefix": "Sensor Prefix",
+          "location": "Location (Optional)",
+          "temperature_unit": "Temperature Unit",
+          "expire_after": "Expire After (seconds)"
+        },
+        "data_description": {
+          "webhook_id": "Unique identifier for your webhook endpoint (changing this will create a new endpoint)",
+          "sensor_prefix": "Prefix for all sensor entities (changing this may create duplicate sensors)",
+          "location": "Optional location name to include in sensor names",
+          "temperature_unit": "Temperature display unit (automatic conversion from Celsius if needed)",
+          "expire_after": "Time in seconds after which inactive sensors are automatically removed"
+        }
+      }
+    },
+    "error": {
+      "webhook_id": "Webhook ID must contain only letters, numbers, and underscores",
+      "invalid_sensor_prefix": "Sensor prefix must contain only letters, numbers, and underscores",
+      "invalid_expire_after": "Expire time must be between 60 seconds and 7 days (604800 seconds)",
+      "unknown": "Unexpected error occurred"
+    }
+  }
+}

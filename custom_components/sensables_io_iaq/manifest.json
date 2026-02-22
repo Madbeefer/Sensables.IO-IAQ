@@ -1,5 +1,5 @@
 {
-  "domain": "Sensables.IO-IAQ",
+  "domain": "sensables_io_iaq",
   "name": "Sensables.IO IAQ",
   "codeowners": ["@Madbeefer"],
   "config_flow": true,
@@ -10,5 +10,6 @@
   "requirements": [],
   "version": "1.0.0", 
 }
+
 
 

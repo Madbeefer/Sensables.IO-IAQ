@@ -5,11 +5,8 @@
   "config_flow": true,
   "dependencies": ["http"],
   "documentation": "https://github.com/Madbeefer/Sensables.IO-IAQ",
-  "integration_type": "device"
+  "integration_type": "device",
   "iot_class": "cloud_push",
   "requirements": [],
-  "version": "1.0.0", 
+  "version": "1.0.0"
 }
-
-
-

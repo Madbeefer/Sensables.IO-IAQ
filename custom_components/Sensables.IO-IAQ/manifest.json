@@ -1,13 +1,14 @@
 {
   "domain": "Sensables.IO-IAQ",
   "name": "Sensables.IO IAQ",
-  "version": "1.0.0",
-  "documentation": "https://github.com/Madbeefer/Sensables.IO-IAQ",
-  "requirements": [],
-  "dependencies": ["http"],
   "codeowners": ["@Madbeefer"],
-  "iot_class": "cloud_push",
   "config_flow": true,
+  "dependencies": ["http"],
+  "documentation": "https://github.com/Madbeefer/Sensables.IO-IAQ",
   "integration_type": "device"
+  "iot_class": "cloud_push",
+  "requirements": [],
+  "version": "1.0.0", 
 }
+
 

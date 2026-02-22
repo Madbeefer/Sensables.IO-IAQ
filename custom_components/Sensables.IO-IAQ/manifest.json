@@ -1,5 +1,5 @@
 {
-  "domain": "sensables_iaq",
+  "domain": "Sensables.IO-IAQ",
   "name": "Sensables.IO IAQ",
   "version": "1.0.0",
   "documentation": "https://github.com/Madbeefer/Sensables.IO-IAQ",
@@ -10,3 +10,4 @@
   "config_flow": true,
   "integration_type": "device"
 }
+
